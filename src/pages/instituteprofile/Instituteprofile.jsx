@@ -38,7 +38,7 @@ const InstituteProfile = () => {
           <div className="institute-profile-box">
             <div className="institute-profile-left">
               <img 
-                src={user.profileImage ? `https://shraddhaa.roohmedia.com:5000/uploads/${user.profileImage}` : "default_image_path"} 
+                src={user.profileImage ? `https://shraddhaa.filmylattu.com:5000/uploads/${user.profileImage}` : "default_image_path"} 
                 alt="Profile" 
                 className="institute-profile-image" 
               />

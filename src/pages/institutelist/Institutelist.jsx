@@ -15,7 +15,7 @@ const InstituteList = () => {
 
         const fetchInstituteList = async () => {
             try {
-                const response = await axios.get('https://shraddhaa.roohmedia.com:5000/api/admin/institutes', {
+                const response = await axios.get('https://shraddhaa.filmylattu.com:5000/api/admin/institutes', {
                     params: { state: state }
                 });
                 setInstituteList(response.data);

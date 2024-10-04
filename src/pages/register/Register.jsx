@@ -68,7 +68,7 @@ const Signup = () => {
         }
 
         try {
-            const url = 'https://shraddhaa.roohmedia.com:5000/api/users/register';
+            const url = 'https://shraddhaa.filmylattu.com:5000/api/users/register';
             const data = new FormData();
             Object.keys(formData).forEach((key) => {
                 data.append(key, formData[key]);

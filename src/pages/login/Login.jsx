@@ -31,7 +31,7 @@ const Login = () => {
     try {
       console.log('Sending login request with data:', data); // Log request data
 
-      const response = await fetch('https://shraddhaa.roohmedia.com:5000/api/users/login', {
+      const response = await fetch('https://shraddhaa.filmylattu.com:5000/api/users/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
