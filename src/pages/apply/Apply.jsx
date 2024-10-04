@@ -14,7 +14,7 @@ const Apply = () => {
     if (state?.scholarship) {
       const fetchScholarshipDetails = async () => {
         try {
-          const response = await fetch(`https://shraddhaa.filmylattu.com:5000/api/scholarships/${state.scholarship._id}`);
+          const response = await fetch(`https://shraddhaa.sportwiseltd.com:5000/api/scholarships/${state.scholarship._id}`);
           const data = await response.json();
 
           if (response.ok) {
@@ -194,7 +194,7 @@ const Form = ({ scholarshipName, setIsApplied }) => {
     });
 
     try {
-      const response = await axios.post('https://shraddhaa.filmylattu.com:5000/api/form/submit', data, {
+      const response = await axios.post('https://shraddhaa.sportwiseltd.com:5000/api/form/submit', data, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }

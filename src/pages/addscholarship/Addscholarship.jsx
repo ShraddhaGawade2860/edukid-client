@@ -55,7 +55,7 @@ const AddScholarship = () => {
   }
 
     try {
-      const response = await fetch('https://shraddhaa.filmylattu.com:5000/api/scholarships', {
+      const response = await fetch('https://shraddhaa.sportwiseltd.com:5000/api/scholarships', {
         method: 'POST',
         body: formData,
       });

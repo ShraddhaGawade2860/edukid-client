@@ -17,7 +17,7 @@ const StudentVerification = () => {
         const user = JSON.parse(localStorage.getItem('user'));
         if (user && user.role === 1) {
           const instituteNameEncoded = encodeURIComponent(user.name);
-          const response = await axios.get(`https://shraddhaa.filmylattu.com:5000/api/forms/institute/${instituteNameEncoded}`);
+          const response = await axios.get(`https://shraddhaa.sportwiseltd.com:5000/api/forms/institute/${instituteNameEncoded}`);
           setUserForms(response.data);
         }
       } catch (error) {
