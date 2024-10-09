@@ -12,7 +12,7 @@ const View = () => {
   useEffect(() => {
     const fetchScholarships = async () => {
       try {
-        const response = await fetch(`http://3.110.2.125:5000/api/scholarships?classSelection=${classSelection}&genderSelection=${genderSelection}&stateSelection=${stateSelection}&typeSelection=${typeSelection}`);
+        const response = await fetch(`https://3.110.2.125:5000/api/scholarships?classSelection=${classSelection}&genderSelection=${genderSelection}&stateSelection=${stateSelection}&typeSelection=${typeSelection}`);
         const data = await response.json();
 
         if (response.ok) {
