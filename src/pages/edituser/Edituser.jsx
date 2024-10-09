@@ -24,7 +24,7 @@ const EditUser = () => {
         gender: user.gender || '',
         profileImage: user.profileImage || ''
       });
-      setImagePreview(user.profileImage ? `https://3.110.2.125:5000/uploads/${user.profileImage}` : '');
+      setImagePreview(user.profileImage ? `https://172.31.41.116:5000/uploads/${user.profileImage}` : '');
     }
   }, [user]);
 
@@ -55,7 +55,7 @@ const EditUser = () => {
     }
 
     try {
-      const response = await axios.put(`https://3.110.2.125:5000/api/users/${user.id}`, formDataToSend, {
+      const response = await axios.put(`https://172.31.41.116:5000/api/users/${user.id}`, formDataToSend, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }

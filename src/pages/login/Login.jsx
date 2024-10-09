@@ -31,7 +31,7 @@ const Login = () => {
     try {
       console.log('Sending login request with data:', data); // Log request data
 
-      const response = await fetch('https://3.110.2.125:5000/api/users/login', {
+      const response = await fetch('https://172.31.41.116:5000/api/users/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

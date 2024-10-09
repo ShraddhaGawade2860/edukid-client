@@ -21,7 +21,7 @@ const Scholarshiplist = () => {
   useEffect(() => {
     const fetchScholarships = async () => {
       try {
-        const response = await fetch(`https://3.110.2.125:5000/api/scholarships/bystate/${state}`);
+        const response = await fetch(`https://172.31.41.116:5000/api/scholarships/bystate/${state}`);
         const data = await response.json();
         if (response.ok) {
           setScholarships(data);
