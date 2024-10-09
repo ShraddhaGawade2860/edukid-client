@@ -38,7 +38,7 @@ const Home = () => {
   useEffect(() => {
     const fetchNotifications = async () => {
       try {
-        const response = await axios.get('https://172.31.41.116:5000/api/notifications');
+        const response = await axios.get('http://172.31.41.116:5000/api/notifications');
         setNotifications(response.data);
       } catch (error) {
         console.error('Error fetching notifications:', error);

@@ -23,7 +23,7 @@ const AvailableScholarship = () => {
     const fetchScholarships = async () => {
       if (selectedState) {
         try {
-          const response = await fetch(`https://172.31.41.116:5000/api/scholarships/bystate/${selectedState}`);
+          const response = await fetch(`http://172.31.41.116:5000/api/scholarships/bystate/${selectedState}`);
           const data = await response.json();
           if (response.ok) {
             setScholarships(data);

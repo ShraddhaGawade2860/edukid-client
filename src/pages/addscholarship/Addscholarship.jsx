@@ -55,7 +55,7 @@ const AddScholarship = () => {
   }
 
     try {
-      const response = await fetch('https://172.31.41.116:5000/api/scholarships', {
+      const response = await fetch('http://172.31.41.116:5000/api/scholarships', {
         method: 'POST',
         body: formData,
       });
