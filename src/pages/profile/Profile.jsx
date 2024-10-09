@@ -16,7 +16,7 @@ const Profile = () => {
       <div className="profile-box">
         <div className="profile-left">
           <img 
-            src={user.profileImage ? `http://172.31.41.116:5000/uploads/${user.profileImage}` : "default_image_path"} 
+            src={user.profileImage ? `https://35.160.120.126:5000/uploads/${user.profileImage}` : "default_image_path"} 
             alt="Profile" 
             className="profile-image" 
           />

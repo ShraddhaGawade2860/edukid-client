@@ -14,7 +14,7 @@ const Apply = () => {
     if (state?.scholarship) {
       const fetchScholarshipDetails = async () => {
         try {
-          const response = await fetch(`http://172.31.41.116:5000/api/scholarships/${state.scholarship._id}`);
+          const response = await fetch(`https://35.160.120.126:5000/api/scholarships/${state.scholarship._id}`);
           const data = await response.json();
 
           if (response.ok) {
@@ -194,7 +194,7 @@ const Form = ({ scholarshipName, setIsApplied }) => {
     });
 
     try {
-      const response = await axios.post('http://172.31.41.116:5000/api/form/submit', data, {
+      const response = await axios.post('https://35.160.120.126:5000/api/form/submit', data, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }

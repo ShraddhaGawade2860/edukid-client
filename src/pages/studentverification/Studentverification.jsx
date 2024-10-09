@@ -17,7 +17,7 @@ const StudentVerification = () => {
         const user = JSON.parse(localStorage.getItem('user'));
         if (user && user.role === 1) {
           const instituteNameEncoded = encodeURIComponent(user.name);
-          const response = await axios.get(`http://172.31.41.116:5000/api/forms/institute/${instituteNameEncoded}`);
+          const response = await axios.get(`https://35.160.120.126:5000/api/forms/institute/${instituteNameEncoded}`);
           setUserForms(response.data);
         }
       } catch (error) {
