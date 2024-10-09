@@ -12,7 +12,7 @@ const ScholarshipHistory = () => {
       if (user && user.email) {
         try {
           console.log('Fetching data for email:', user.email);
-          const response = await axios.get(`https://shraddhaa.sportwiseltd.com:5000/api/scholarshipHistory/scholarship-history/${user.email}`);
+          const response = await axios.get(`http://3.110.2.125:5000/api/scholarshipHistory/scholarship-history/${user.email}`);
           setApplications(response.data);
         } catch (error) {
           console.error('Error fetching scholarship history:', error.response ? error.response.data : error.message);

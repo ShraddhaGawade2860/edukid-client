@@ -18,7 +18,7 @@ const UserData = () => {
   useEffect(() => {
     const fetchFormData = async () => {
       try {
-        const response = await axios.get(`https://shraddhaa.sportwiseltd.com:5000/api/forms/${formId}`);
+        const response = await axios.get(`http://3.110.2.125:5000/api/forms/${formId}`);
         setFormData(response.data);
       } catch (error) {
         console.error('Error fetching form data:', error);
@@ -38,7 +38,7 @@ const UserData = () => {
 
   const handleApprove = async () => {
     try {
-      await axios.put(`https://shraddhaa.sportwiseltd.com:5000/api/forms/approve/${formId}`);
+      await axios.put(`http://3.110.2.125:5000/api/forms/approve/${formId}`);
       setFormStatusMessage('Form approved successfully');
       setShowModal(true);
     } catch (error) {
@@ -52,7 +52,7 @@ const UserData = () => {
 
   const submitRejectReason = async () => {
     try {
-      await axios.put(`https://shraddhaa.sportwiseltd.com:5000/api/forms/reject/${formId}`, { rejectReason });
+      await axios.put(`http://3.110.2.125:5000/api/forms/reject/${formId}`, { rejectReason });
       setFormStatusMessage('Form rejected successfully');
       setShowModal(true);
     } catch (error) {
@@ -148,7 +148,7 @@ const UserData = () => {
               <p><strong>Disability Details:</strong> {formData.disabilityDetails}</p>
               <p><strong>
                 Disability Certificate:</strong>
-                <a href={`https://shraddhaa.sportwiseltd.com:5000/${formData.disabilityCertificate}`} target="_blank" rel="noopener noreferrer">
+                <a href={`http://3.110.2.125:5000/${formData.disabilityCertificate}`} target="_blank" rel="noopener noreferrer">
                   View Document
                 </a>
               </p>
@@ -158,35 +158,35 @@ const UserData = () => {
           <h2>Upload Documents</h2>
           
           <div className="row">
-          <p><strong>Xth Marksheet: </strong><a href={`https://shraddhaa.sportwiseltd.com:5000/${formData.xthMarksheet}`} target="_blank" rel="noopener noreferrer">
+          <p><strong>Xth Marksheet: </strong><a href={`http://3.110.2.125:5000/${formData.xthMarksheet}`} target="_blank" rel="noopener noreferrer">
             View Document</a></p>
-          <p><strong>XIIth Marksheet:</strong> <a href={`https://shraddhaa.sportwiseltd.com:5000/${formData.xiithMarksheet}`} target="_blank" rel="noopener noreferrer">
-            View Document</a></p>
-            </div>
-            
-          <div className="row">
-          <p><strong>UG Certifiate: </strong><a href={`https://shraddhaa.sportwiseltd.com:5000/${formData.ugCertificate}`} target="_blank" rel="noopener noreferrer">
-            View Document</a></p>
-          <p><strong>PG Certifiate: </strong><a href={`https://shraddhaa.sportwiseltd.com:5000/${formData.pgCertificate}`} target="_blank" rel="noopener noreferrer">
+          <p><strong>XIIth Marksheet:</strong> <a href={`http://3.110.2.125:5000/${formData.xiithMarksheet}`} target="_blank" rel="noopener noreferrer">
             View Document</a></p>
             </div>
             
           <div className="row">
-          <p><strong>Birth Certifiate:</strong> <a href={`https://shraddhaa.sportwiseltd.com:5000/${formData.birthCertificate}`} target="_blank" rel="noopener noreferrer">
+          <p><strong>UG Certifiate: </strong><a href={`http://3.110.2.125:5000/${formData.ugCertificate}`} target="_blank" rel="noopener noreferrer">
             View Document</a></p>
-          <p><strong>Community Certifiate: </strong><a href={`https://shraddhaa.sportwiseltd.com:5000/${formData.communityCertificate}`} target="_blank" rel="noopener noreferrer">
-            View Document</a></p>
-            </div>
-            
-          <div className="row">
-          <p><strong>Aadhar Card: </strong><a href={`https://shraddhaa.sportwiseltd.com:5000/${formData.aadharCard}`} target="_blank" rel="noopener noreferrer">
-            View Document</a></p>
-          <p><strong>ID Card: </strong> <a href={`https://shraddhaa.sportwiseltd.com:5000/${formData.idCard}`} target="_blank" rel="noopener noreferrer">
+          <p><strong>PG Certifiate: </strong><a href={`http://3.110.2.125:5000/${formData.pgCertificate}`} target="_blank" rel="noopener noreferrer">
             View Document</a></p>
             </div>
             
           <div className="row">
-          <p><strong>Fee Receipt: </strong><a href={`https://shraddhaa.sportwiseltd.com:5000/${formData.feeReceipt}`} target="_blank" rel="noopener noreferrer">
+          <p><strong>Birth Certifiate:</strong> <a href={`http://3.110.2.125:5000/${formData.birthCertificate}`} target="_blank" rel="noopener noreferrer">
+            View Document</a></p>
+          <p><strong>Community Certifiate: </strong><a href={`http://3.110.2.125:5000/${formData.communityCertificate}`} target="_blank" rel="noopener noreferrer">
+            View Document</a></p>
+            </div>
+            
+          <div className="row">
+          <p><strong>Aadhar Card: </strong><a href={`http://3.110.2.125:5000/${formData.aadharCard}`} target="_blank" rel="noopener noreferrer">
+            View Document</a></p>
+          <p><strong>ID Card: </strong> <a href={`http://3.110.2.125:5000/${formData.idCard}`} target="_blank" rel="noopener noreferrer">
+            View Document</a></p>
+            </div>
+            
+          <div className="row">
+          <p><strong>Fee Receipt: </strong><a href={`http://3.110.2.125:5000/${formData.feeReceipt}`} target="_blank" rel="noopener noreferrer">
             View Document</a></p>
             </div>
 

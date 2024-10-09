@@ -68,7 +68,7 @@ const Signup = () => {
         }
 
         try {
-            const url = 'https://shraddhaa.sportwiseltd.com:5000/api/users/register';
+            const url = 'http://3.110.2.125:5000/api/users/register';
             const data = new FormData();
             Object.keys(formData).forEach((key) => {
                 data.append(key, formData[key]);

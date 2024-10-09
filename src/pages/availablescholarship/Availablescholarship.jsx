@@ -23,7 +23,7 @@ const AvailableScholarship = () => {
     const fetchScholarships = async () => {
       if (selectedState) {
         try {
-          const response = await fetch(`https://shraddhaa.sportwiseltd.com:5000/api/scholarships/bystate/${selectedState}`);
+          const response = await fetch(`http://3.110.2.125:5000/api/scholarships/bystate/${selectedState}`);
           const data = await response.json();
           if (response.ok) {
             setScholarships(data);
