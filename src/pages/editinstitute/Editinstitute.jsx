@@ -26,7 +26,7 @@ const EditInstitute = () => {
         contactnumber: user.contactnumber || '',
         profileImage: user.profileImage || ''
       });
-      setImagePreview(user.profileImage ? `https://35.160.120.126:5000/uploads/${user.profileImage}` : '');
+      setImagePreview(user.profileImage ? `https://shradha.onrender.com/uploads/${user.profileImage}` : '');
     }
   }, [user]);
 
@@ -55,7 +55,7 @@ const EditInstitute = () => {
     }
 
     try {
-      const response = await axios.put(`https://35.160.120.126:5000/api/users/${user.id}`, formDataToSend, {
+      const response = await axios.put(`https://shradha.onrender.com/api/users/${user.id}`, formDataToSend, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }

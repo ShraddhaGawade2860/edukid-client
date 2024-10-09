@@ -21,7 +21,7 @@ const VerifyOther = () => {
 
     const fetchForm = async () => {
       try {
-        const response = await axios.get(`https://35.160.120.126:5000/api/forms/${formId}`);
+        const response = await axios.get(`https://shradha.onrender.com/api/forms/${formId}`);
         setForm(response.data);
       } catch (error) {
         console.error('Error fetching form:', error);
@@ -41,7 +41,7 @@ const VerifyOther = () => {
 
   const handleApprove = async () => {
     try {
-      await axios.put(`https://35.160.120.126:5000/api/forms/otherstate/${formId}/approve`);
+      await axios.put(`https://shradha.onrender.com/api/forms/otherstate/${formId}/approve`);
       alert('Form approved');
       navigate(`/studentlist/${state}?toggle=other`); // Redirect to student list after approval
     } catch (error) {
@@ -51,7 +51,7 @@ const VerifyOther = () => {
 
   const handleReject = async () => {
     try {
-      await axios.put(`https://35.160.120.126:5000/api/forms/otherstate/${formId}/reject`, { rejectReason });
+      await axios.put(`https://shradha.onrender.com/api/forms/otherstate/${formId}/reject`, { rejectReason });
       alert('Form rejected');
       navigate(`/studentlist/${state}?toggle=other`); // Redirect to student list after rejection
     } catch (error) {
@@ -129,7 +129,7 @@ const VerifyOther = () => {
                 <p><strong>Disability Details: </strong>{form.disabilityDetails}</p>
                 <p><strong>
                   Disability Certificate:</strong>
-                  <a href={`https://35.160.120.126:5000/${form.disabilityCertificate}`} target="_blank" rel="noopener noreferrer">
+                  <a href={`https://shradha.onrender.com/${form.disabilityCertificate}`} target="_blank" rel="noopener noreferrer">
                     View Document
                   </a>
                 </p>
@@ -139,31 +139,31 @@ const VerifyOther = () => {
 
             <h2>Upload Documents</h2>
             <div className="row">
-            <p><strong>Xth Marksheet:</strong> <a href={`https://35.160.120.126:5000/${form.xthMarksheet}`} target="_blank" rel="noopener noreferrer">
+            <p><strong>Xth Marksheet:</strong> <a href={`https://shradha.onrender.com/${form.xthMarksheet}`} target="_blank" rel="noopener noreferrer">
               View Document</a></p>
-            <p><strong>XIIth Marksheet: </strong><a href={`https://35.160.120.126:5000/${form.xiithMarksheet}`} target="_blank" rel="noopener noreferrer">
-              View Document</a></p>
-              </div>
-              <div className="row">
-            <p><strong>UG Certificate: </strong><a href={`https://35.160.120.126:5000/${form.ugCertificate}`} target="_blank" rel="noopener noreferrer">
-              View Document</a></p>
-            <p><strong>PG Certificate: </strong><a href={`https://35.160.120.126:5000/${form.pgCertificate}`} target="_blank" rel="noopener noreferrer">
+            <p><strong>XIIth Marksheet: </strong><a href={`https://shradha.onrender.com/${form.xiithMarksheet}`} target="_blank" rel="noopener noreferrer">
               View Document</a></p>
               </div>
               <div className="row">
-            <p><strong>Birth Certificate: </strong><a href={`https://35.160.120.126:5000/${form.birthCertificate}`} target="_blank" rel="noopener noreferrer">
+            <p><strong>UG Certificate: </strong><a href={`https://shradha.onrender.com/${form.ugCertificate}`} target="_blank" rel="noopener noreferrer">
               View Document</a></p>
-            <p><strong>Community Certificate: </strong><a href={`https://35.160.120.126:5000/${form.communityCertificate}`} target="_blank" rel="noopener noreferrer">
-              View Document</a></p>
-              </div>
-              <div className="row">
-            <p><strong>Aadhar Card: </strong><a href={`https://35.160.120.126:5000/${form.aadharCard}`} target="_blank" rel="noopener noreferrer">
-              View Document</a></p>
-            <p><strong>ID Card: </strong><a href={`https://35.160.120.126:5000/${form.idCard}`} target="_blank" rel="noopener noreferrer">
+            <p><strong>PG Certificate: </strong><a href={`https://shradha.onrender.com/${form.pgCertificate}`} target="_blank" rel="noopener noreferrer">
               View Document</a></p>
               </div>
               <div className="row">
-            <p><strong>Fee Receipt: </strong><a href={`https://35.160.120.126:5000/${form.feeReceipt}`} target="_blank" rel="noopener noreferrer">
+            <p><strong>Birth Certificate: </strong><a href={`https://shradha.onrender.com/${form.birthCertificate}`} target="_blank" rel="noopener noreferrer">
+              View Document</a></p>
+            <p><strong>Community Certificate: </strong><a href={`https://shradha.onrender.com/${form.communityCertificate}`} target="_blank" rel="noopener noreferrer">
+              View Document</a></p>
+              </div>
+              <div className="row">
+            <p><strong>Aadhar Card: </strong><a href={`https://shradha.onrender.com/${form.aadharCard}`} target="_blank" rel="noopener noreferrer">
+              View Document</a></p>
+            <p><strong>ID Card: </strong><a href={`https://shradha.onrender.com/${form.idCard}`} target="_blank" rel="noopener noreferrer">
+              View Document</a></p>
+              </div>
+              <div className="row">
+            <p><strong>Fee Receipt: </strong><a href={`https://shradha.onrender.com/${form.feeReceipt}`} target="_blank" rel="noopener noreferrer">
               View Document</a></p>
               </div>
 

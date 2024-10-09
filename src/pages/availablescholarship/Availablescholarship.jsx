@@ -23,7 +23,7 @@ const AvailableScholarship = () => {
     const fetchScholarships = async () => {
       if (selectedState) {
         try {
-          const response = await fetch(`https://35.160.120.126:5000/api/scholarships/bystate/${selectedState}`);
+          const response = await fetch(`https://shradha.onrender.com/api/scholarships/bystate/${selectedState}`);
           const data = await response.json();
           if (response.ok) {
             setScholarships(data);

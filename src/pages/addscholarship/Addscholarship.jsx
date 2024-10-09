@@ -55,7 +55,7 @@ const AddScholarship = () => {
   }
 
     try {
-      const response = await fetch('https://35.160.120.126:5000/api/scholarships', {
+      const response = await fetch('https://shradha.onrender.com/api/scholarships', {
         method: 'POST',
         body: formData,
       });

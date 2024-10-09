@@ -68,7 +68,7 @@ const Signup = () => {
         }
 
         try {
-            const url = 'https://35.160.120.126:5000/api/users/register';
+            const url = 'https://shradha.onrender.com/api/users/register';
             const data = new FormData();
             Object.keys(formData).forEach((key) => {
                 data.append(key, formData[key]);

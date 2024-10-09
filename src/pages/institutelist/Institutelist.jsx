@@ -15,7 +15,7 @@ const InstituteList = () => {
 
         const fetchInstituteList = async () => {
             try {
-                const response = await axios.get('https://35.160.120.126:5000/api/admin/institutes', {
+                const response = await axios.get('https://shradha.onrender.com/api/admin/institutes', {
                     params: { state: state }
                 });
                 setInstituteList(response.data);
